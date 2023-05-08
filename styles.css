@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn i {
+    margin-left: 8px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+#toast {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast {
+    background-color: #fff;
+    color: steelblue;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+.toast.info {
+    color: steelblue;
+}
+
+.toast.success {
+    color: rgb(40, 186, 40);
+}
+.toast.error {
+    color: rgb(209, 43, 43);
+}

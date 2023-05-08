@@ -36,8 +36,8 @@ body {
 }
 
 .btn:active {
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
+    transform: scale(110%);
+    transition: all 0.2s ease-in;
 }
 
 #toast {
